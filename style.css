@@ -1,0 +1,142 @@
+@font-face{
+    font-family: "Inconsolata Bold";
+    src: url(font/Inconsolata-Bold.ttf);
+}
+@font-face{
+    font-family: "Inconsolata reg";
+    src: url(font/Inconsolata-Regular.ttf);
+}
+@font-face{
+    font-family: "Inconsolata semi";
+    src: url(font/Inconsolata-SemiBold.ttf);
+}
+@font-face{
+    font-family: "Inconsolata light";
+    src: url(font/Inconsolata-Light.ttf);
+}
+@font-face{
+    font-family: "Space-mono Bold";
+    src: url(font/SpaceMono-Bold.ttf);
+}
+@font-face{
+    font-family: "Space-mono";
+    src: url(font/SpaceMono-Regular.ttf);
+}
+@font-face{
+    font-family: "MontSerrat";
+    src: url(font/Montserrat-Regular.ttf);
+}
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+}
+
+.h1--header {
+    font-size: 24px;
+    font-family: "Inconsolata reg";
+    padding: 40px 77px;
+}
+
+img {
+    width: 600px;
+
+}
+
+.grid{
+    margin: 0 auto;
+    padding-top: 150px;
+    max-width: 1400px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 120px;
+    
+}
+
+.txt {
+    text-align: left;
+}
+
+.txt h1 {
+    font-family: "Space-mono Bold";
+    width: 590px;
+    font-size: 64px;
+    padding-bottom: 36px;
+}
+
+.txt p {
+    font-size: 24px;
+    font-family: "Space-mono";
+    width: 400px;
+    padding-bottom: 64px;
+}
+
+
+button {
+    padding: 24px 43px;
+    font-size: 14px;
+    font-family: "Space-mono";
+    background-color: #333333;
+    color: white;
+    border: none;
+}
+
+button:hover {
+    color: black;
+    transition: .2s;
+}
+
+footer {
+    padding-top: 120px;
+    padding-bottom: 39px;
+    text-align: center;
+    font-family: "MontSerrat";
+    font-size: 14px;
+}
+
+
+@media screen and (max-width: 1500px) {
+    .grid {
+        grid-template-columns: repeat(auto-fill, minmax(750px, 1fr));
+        max-width: 750px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .grid {
+        grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+        max-width: 500px;
+    }
+    .txt h1 {
+        font-size: 50px;
+    }
+    .txt p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        max-width: 250px;
+    }
+    .txt h1 {
+        font-size: 48px;
+        width: 250px;
+    }
+    .txt p {
+        font-size: 18px;
+        width: 250px;
+    }
+    img {
+        width: 286px;
+    }
+}
